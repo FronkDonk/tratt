@@ -15,6 +15,16 @@ export default function OurMission() {
   return (
     <>
       <Nav showNavMenu={showNavMenu} handleMenuToggle={handleMenuToggle} />
+       <div className={classes.DropDownMenu}>
+        {/*om showNavMeny är true så visas DropDownMenu komponenten annars inte*/}
+        {showNavMenu && (
+          <DropDownMenu
+            showNavMenu={showNavMenu}
+            handleMenuToggle={handleMenuToggle}
+          />
+        )}
+        {/*Skickar med showNavMenu state till DropDownMeny och funktionen handleMenuToggle */}
+      </div>
       <div className={classes.wrapper}>
         <div className={classes.textWrapper}>
           <div className={classes.textContainer}>

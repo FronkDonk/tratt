@@ -2,6 +2,8 @@ import Nav from "../components/Layout/Header/Nav";
 import picture from "../assets/mission.jpg";
 import classes from "./OurMission.module.css";
 import { useState } from "react";
+import DropDownMenu from "../components/UI/DropDownMenu";
+
 
 export default function OurMission() {
     const [showNavMenu, setShowNavMenu] = useState(false);

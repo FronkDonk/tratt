@@ -5,7 +5,7 @@ import classes from "./OurMission.module.css";
 export default function OurMission() {
   return (
     <>
-      <Nav />
+      <Nav showNavMenu={showNavMenu} handleMenuToggle={handleMenuToggle} />
       <div className={classes.wrapper}>
         <div className={classes.textWrapper}>
           <div className={classes.textContainer}>

@@ -1,8 +1,17 @@
 import Nav from "../components/Layout/Header/Nav";
 import picture from "../assets/mission.jpg";
 import classes from "./OurMission.module.css";
+import { useState } from "react";
 
 export default function OurMission() {
+    const [showNavMenu, setShowNavMenu] = useState(false);
+
+  
+    function handleMenuToggle() {
+      setShowNavMenu(!showNavMenu);
+      console.log("hej");
+    }
+  
   return (
     <>
       <Nav showNavMenu={showNavMenu} handleMenuToggle={handleMenuToggle} />

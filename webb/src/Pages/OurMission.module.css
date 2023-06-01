@@ -1,0 +1,40 @@
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+}
+
+.wrapper {
+  display: flex;
+  margin-left: clamp(0px, 15svw, 18rem);
+  margin-right: clamp(0px, 15svw, 18rem);
+  justify-content: center;
+  gap: 3rem;
+  padding-top: 10rem;
+}
+
+.wrapper > img {
+  border: 10px solid #635bff;
+  width: clamp(25rem, 18svw, 35rem);
+
+}
+
+
+
+.textWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    max-width: 40rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .wrapper {
+    flex-direction: column;
+    margin-left: clamp(0px, 8vw, 300px);
+  }
+
+
+}

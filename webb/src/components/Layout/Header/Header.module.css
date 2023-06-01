@@ -1,0 +1,81 @@
+@import url("https://use.typekit.net/nrs8hjb.css");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "neue-haas-grotesk-display", sans-serif;
+}
+
+.header {
+  height: 100svh;
+  position: relative;
+  padding-top: clamp(5rem, -8vw, 7rem);
+  /*responsiv styling för clampen max 7rem minst 5rem och varierar med fönsterbredden*/
+}
+
+
+.header-content {
+  z-index: 1;
+  color: var(--text-color-dark);
+  margin-left: clamp(0px, 15vw, 300px);
+
+  margin-bottom: clamp(-12.5rem, -6.25rem, 0rem);
+  display: flex;
+  align-items: center;
+  gap: clamp(6.25rem, 10.9375rem, 12.5rem);
+}
+
+.buttonContainer {
+  display: flex;
+  margin-top: 3rem;
+  font-weight: 500;
+  gap: 1.875rem;
+}
+
+.header-content-text > h1 {
+  font-size: clamp(3rem, 14vw, 9.3rem);
+  white-space: nowrap;
+}
+
+.header-content-text > h3 {
+  font-size: clamp(0.5rem, 4.5vw, 2.6rem);
+  font-weight: 300;
+}
+
+.header-content-image > img {
+  width: 75rem;
+  margin-top: -3.125rem;
+  z-index: 5;
+  border: 10px solid #635bff;
+}
+
+
+@media only screen and (max-width: 500px) {
+  .header-content {
+    padding-top: clamp(4rem, 8vw, 5rem);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .header-content {
+    margin-left: clamp(0px, 8vw, 300px);
+  }
+
+  .buttonContainer {
+    font-size: 15px;
+    white-space: nowrap;
+    gap: clamp(0.5rem, 4vw, 2rem);
+  }
+
+  .header {
+    height: 70svh;
+  }
+
+  .filler {
+    display: none;
+  }
+
+  .header-content-image > img {
+    display: none;
+  }
+}

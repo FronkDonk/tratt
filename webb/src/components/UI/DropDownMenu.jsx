@@ -84,10 +84,10 @@ export default function DropDownMenu(props) {
             </svg>
           </div>
           <div
-            onClick={() => (window.location.href = "#")}
+            onClick={() => (window.location.href = "/our-mission")}
             className={classes.dropDownItem}
           >
-            <h1>Documentation</h1>
+            <h1>Our mission</h1>
             <svg
               fill="none"
               stroke="currentColor"
